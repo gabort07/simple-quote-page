@@ -11,10 +11,9 @@
 
 
 body {
-  height: 100vh;
+  
   background: url(assets/freedom.jpg) no-repeat center;
   background-size: cover;
-  line-height: 3rem;
   color: #333;
 }
 
@@ -29,9 +28,13 @@ body {
 /*=== CONTAINER STYLE ===*/
 
 .wrapper {
+  height: 100vh;
+  position: relative;
   width: 90%;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
+  line-height: 3rem;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .quote {
@@ -40,7 +43,7 @@ body {
   padding: 9rem 0 3rem;
 }
 
-@media (min-width: 666px) {
+@media (min-width: 460px, min-width: 680) {
 
   .quote {
     padding: 2.5rem;
@@ -72,16 +75,15 @@ body {
 /*=== FOOTER STYLE ===*/
 
 footer {
-  width: 100vw;
   position: absolute;
   bottom: 0;
-  background: rgba(256,256,256,.3);
-  box-shadow: 0 -5px 10px rgba(256,256,256, .3);
-  line-height: 1.5rem
+  left: 0;
+  width: 100vw;
+  height: 20px;
 }
 
 a {
-  margin: 1rem;
+  margin: 0 20px;
   color: #333;
   text-decoration: none;
 }
